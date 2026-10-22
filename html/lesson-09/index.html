@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="HTML学習中">
+</head>
+
+<body>
+
+    <dialog id="modal">
+        <p>モーダルダイアログ</p>
+        <button onclick="document.getElementById('modal').close()">閉じる</button>
+    </dialog>
+
+    <dialog id="nonModal">
+        <p>非モーダルダイアログ</p>
+        <button onclick="document.getElementById('nonModal').close()">閉じる</button>
+    </dialog>
+
+    <button onclick="document.getElementById('modal').showModal()">モーダルを開く</button>
+    <button onclick="document.getElementById('nonModal').show()">非モーダルを開く</button>
+
+</body>
+</html>
