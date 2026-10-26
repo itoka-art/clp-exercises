@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lesson-12 擬似クラス </title>
+    <meta name="description" content="CSS学習中">
+
+<style>
+
+.button{
+    background-color:#4a90e2 ;
+}
+
+.button:hover{
+    background-color:#357abd ;
+}
+.button:active{
+    background-color:#1a5fa8 ;
+}
+
+
+.text-input:focus{
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow:0 0 0 3px #4a90e2 ;
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <label for="message">メッセージ:</label>
+    <input type="text" id="message" name="message" class="text-input">
+    <button class="button">クリック</button>
+</body>
+</html>
