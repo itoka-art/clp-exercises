@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lesson-09 フレックスボックスレイアウト</title>
+    <meta name="description" content="CSS学習中">
+
+<style>
+    .card-container{
+        border: 2px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .card{
+        background-color: antiquewhite;
+        flex:1;
+    }
+
+    .card--wide{
+        flex: 2;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+        <div class="card-container">
+
+            <div class="card card--wide">
+                <h2>カード1</h2>
+                <p>幅の広いカードです。</p>
+            </div>
+
+            <div class="card">
+                <h2>カード2</h2>
+                <p>通常のカードです。</p>
+            </div>
+
+            <div class="card">
+                <h2>カード3</h2>
+                <p>通常のカードです。</p>
+            </div>
+
+        </div>
+</body>
+
+
+</html>
