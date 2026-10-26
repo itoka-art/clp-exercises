@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lesson-08 要素の配置</title>
+    <meta name="description" content="CSS学習中">
+
+<style>
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        親要素
+        <div class="child">
+            子要素
+        </div>
+    </div>
+
+    <button class="button">
+        ボタン
+    </button>
+
+    <div class="overlay"></div>
+</body>
+
+</html>
