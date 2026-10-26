@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lesson-07 背景と枠線</title>
+    <meta name="description" content="CSS学習中">
+
+<style>
+.hero{
+    height: 200px;
+    background-image: url(/images/18_1_l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    background-color: #f0f4f8;
+}
+
+.circle{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 141, 14);
+    border: 2px solid #333;
+    border-radius: 50%;
+    box-shadow:4px 4px 8px rgba(0, 0, 0, 0.2) ;
+}
+
+.focus-box:focus{
+    outline: 3px solid blue;
+    outline-offset: 4px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="hero">
+    </div>
+
+    <main class="content">
+        <h2>コンテンツリア</h2>
+
+        <div class="circle">
+            円形ボックス
+        </div>
+
+        <div class="focus-box" tabindex="0">
+            フォーカスの練習
+        </div>
+
+    </main>
+</body>
+
+</html>
