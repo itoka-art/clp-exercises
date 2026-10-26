@@ -1,0 +1,21 @@
+.box{
+    background-color: blue;
+    width: 300px;
+}
+
+.child{
+    background-color: aqua;
+    width: 50%;
+}
+
+.text{
+    font-size: 1.5rem;
+}
+
+.hero{
+    height: 100vh;
+}
+
+.main{
+    min-height: calc(100vh - 60px);
+}
