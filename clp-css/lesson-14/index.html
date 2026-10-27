@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lesson-14 レスポンシブ</title>
+
+    <style>
+        .card-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .card{
+            background-color: lightblue;
+        }
+
+        @media (min-width: 768px) {
+            .card-list{
+                grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+
+        @media(min-width: 1024px){
+            .card-list{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="card-list">
+    <div class="card">カード1</div>
+    <div class="card">カード2</div>
+    <div class="card">カード3</div>
+    <div class="card">カード4</div>
+    <div class="card">カード5</div>
+    <div class="card">カード6</div>
+</div>
+
+</body>
+</html>
