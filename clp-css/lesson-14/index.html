@@ -6,39 +6,30 @@
     <title>CSS lesson-14 レスポンシブ</title>
 
     <style>
-        .card-list{
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        .card{
-            background-color: lightblue;
-        }
-
-        @media (min-width: 768px) {
-            .card-list{
-                grid-template-columns: repeat(2,1fr);
-            }
-
+        .plan-card{
+            width: 100%;
+            max-width: 360px;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 2px solid;
+            margin-top: 24px;
         }
 
-        @media(min-width: 1024px){
-            .card-list{
-                grid-template-columns: repeat(3,1fr);
-            }
-        }
+        .pricing {
+    padding-inline: 20px;
+}
     </style>
 </head>
 
 <body>
-<div class="card-list">
-    <div class="card">カード1</div>
-    <div class="card">カード2</div>
-    <div class="card">カード3</div>
-    <div class="card">カード4</div>
-    <div class="card">カード5</div>
-    <div class="card">カード6</div>
-</div>
+<section class="pricing">
+    <h2>制作プラン</h2>
 
+    <div class="plan-card">
+        <h3>スタンダードプラン</h3>
+        <p>企業向けWebサイト制作</p>
+        <p>¥150,000〜</p>
+    </div>
+</section>
 </body>
 </html>
