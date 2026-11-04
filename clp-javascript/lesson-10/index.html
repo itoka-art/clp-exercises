@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascriptの練習</title>
+
+    <style>
+        .alert {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 80px;
+            background: blue;
+            color: white;
+            font-weight: bold;
+            padding: 0 16px;
+            opacity: 1;
+            transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+        }
+
+        .disactive{
+            transform: translateX(-10%);
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Javascriptの練習</p>
+    <script type="module" src="/clp-javascript/lesson-10/script.js"></script>
+    <div class="alert">成功しました！</div>
+</body>
+</html>
+
